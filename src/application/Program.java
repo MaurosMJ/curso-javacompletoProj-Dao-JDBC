@@ -14,10 +14,16 @@ public class Program {
 	//	Department obj = new Department(1, "Books");
 	//	System.out.println(obj);
 		
-		Seller sell = new Seller (1, "Vendas", "funcionario@email.com", new Date(), 3000f, new Department(1, "Books"));
+		//	Seller sell = new Seller (1, "Vendas", "funcionario@email.com", new Date(), 3000f, new Department(1, "Books"));
+		
+		//	SellerDao sellerDao = DaoFactory.createSellerDao();
+		
+		//	System.out.println(sell);
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
+		Seller seller = sellerDao.findById(3);
 		
-		System.out.println(sell);
+		System.out.println(seller); 
+		
 	}
 }
