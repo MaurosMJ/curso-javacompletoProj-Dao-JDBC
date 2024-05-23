@@ -16,7 +16,7 @@ public class Seller implements Serializable {
 	private Date date;
 	private double baseSalary;
 	private Department department;
-	
+
 	public Seller() {
 
 	}
@@ -100,7 +100,5 @@ public class Seller implements Serializable {
 		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", date=" + date + ", baseSalary="
 				+ baseSalary + ", department=" + department + "]";
 	}
-	
-	
-	
+
 }

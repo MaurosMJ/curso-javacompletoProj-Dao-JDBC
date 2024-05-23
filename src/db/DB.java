@@ -12,7 +12,7 @@ import java.util.Properties;
 public class DB {
 
 	public DB() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	private static Connection conn = null;
@@ -62,7 +62,7 @@ public class DB {
 			}
 		}
 	}
-	
+
 	public static void closeResultSet(ResultSet rs) {
 
 		if (rs != null) {
