@@ -5,13 +5,24 @@
 <div style="text-align:center;">
     <img src="https://www.oracle.com/a/ocom/img/jdbc.svg" alt="Descrição da imagem" width="100" height="100">
 </div>
-This repository contains a chess game project created with the help of Professor Nélio Alves in the course 'Java Complete Object-Oriented Programming + Projects'. As the professor explained and taught, I replicated and implemented the logic in my project and published it here on GitHub to improve my learning.
+This repository contains a project using the standard Java API for database access, JDBC, with the help of Professor Nélio Alves in the course 'Java Complete Object-Oriented Programming + Projects'. As the professor explained and taught, I replicated and implemented the logic in my project and published it here on GitHub to improve my learning.
 
-The objective of the project is to practically apply all the knowledge taught in the course so far. This stage of the course had about 6 hours of video lessons; however, it took me around 10 hours to complete due to the need to perform tests, review code, fix implementation errors, and sometimes rewatch the videos for better understanding.
+The goal of this project is to create a system that communicates with a database using the JDBC API. This stage of the course had about 4 hours of video lessons; however, it took me around 7 hours to complete due to the need to perform tests, review code, fix implementation errors, and sometimes rewatch the videos for better understanding.
+
+DOCS:
+https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/
+https://docs.oracle.com/javase/8/docs/api/java/sql/package-summary.html
+Packages: java.sql and javax.sql (supplementary API for servers)
+
+Technologies:
+
+DBMS Tool: MySQL Workbench
+JDBC Connector: MySQL Java Connector
+IDE: Eclipse
 
 ##### More information:
 Course Link: [Link](https://www.udemy.com/course/java-curso-completo)  
-Section 16. Project: Chess Game System
+Section 21. Project: Database access with JDBC
 
 ## Index
 
