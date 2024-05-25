@@ -9,15 +9,15 @@ This repository contains a project using the standard Java API for database acce
 
 The goal of this project is to create a system that communicates with a database using the JDBC API. This stage of the course had about 4 hours of video lessons; however, it took me around 7 hours to complete due to the need to perform tests, review code, fix implementation errors, and sometimes rewatch the videos for better understanding.
 
-DOCS:
+DOCS:  
 https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/
-https://docs.oracle.com/javase/8/docs/api/java/sql/package-summary.html
+https://docs.oracle.com/javase/8/docs/api/java/sql/package-summary.html  
 Packages: java.sql and javax.sql (supplementary API for servers)
 
 Technologies:
 
-DBMS Tool: MySQL Workbench
-JDBC Connector: MySQL Java Connector
+DBMS Tool: MySQL Workbench  
+JDBC Connector: MySQL Java Connector  
 IDE: Eclipse
 
 ##### More information:
@@ -34,30 +34,28 @@ Section 21. Project: Database access with JDBC
 
 Examples:
 
-### Possible Moves of a Piece:  
+### JDBC OVERVIEW:
 
 <div style="text-align:center;">
-    <img src="https://imgur.com/Y5AdB7B.png" alt="Descrição da imagem">
-</div>
-<div style="text-align:center;">
-    <img src="https://imgur.com/zTYAQtB.png" alt="Descrição da imagem">
+    <img src="https://imgur.com/dVlLTjn.png" alt="Descrição da imagem">
 </div>
 
-### Castling:  
+###  DAO (Data Access Object):
 
 <div style="text-align:center;">
-    <img src="https://imgur.com/SU0Z8tk.png" alt="Descrição da imagem">
+    <img src="https://imgur.com/3XsmluH.png" alt="Descrição da imagem">
 </div>
 
-### En Passant:  
+### Entities:  
 
 <div style="text-align:center;">
-    <img src="https://imgur.com/ajR1Rgv.png" alt="Descrição da imagem">
+    <img src="https://imgur.com/n3fZwPY.png" alt="Descrição da imagem">
 </div>
 
-### Promotion:
+### Associated objects:  
+
 <div style="text-align:center;">
-    <img src="https://imgur.com/EL8UuIi.png" alt="Descrição da imagem">
+    <img src="https://imgur.com/jLyqsXl.png" alt="Descrição da imagem">
 </div>
 
 ## Worknotes & Commits:
