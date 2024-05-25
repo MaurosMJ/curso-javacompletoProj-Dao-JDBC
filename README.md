@@ -60,278 +60,93 @@ Examples:
 
 ## Worknotes & Commits:
 
-##### Worknote #1 - First Class Position
-Commit hash: [f70b44743aa81591d9a16cf8627ddc8ac040d1fa](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/f70b44743aa81591d9a16cf8627ddc8ac040d1fa)  
+##### Worknote #1 - Created department class
+Commit hash: [46b7c6ac16c4456c27f5a7ff467dc2b28bc3003e](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/46b7c6ac16c4456c27f5a7ff467dc2b28bc3003e)  
 Checklist:
-* Class Position [public]
-* OOP Topics:
-* Encapsulation
+* Attributes
 * Constructors
-* ToString (Object / overriding)
+* Getters/Setters
+* hashCode and equals
+* toString
+* implements Serializable
 
-##### Worknote #2 - Starting to implement Board and Piece
-Commit hash: [5b00bb0e9d4aa82676cc80d8bec2d71c7fe1945d](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/5b00bb0e9d4aa82676cc80d8bec2d71c7fe1945d)  
+##### Worknote #2 - Created Seller class
+Commit hash: [a87219c489f2b3837bbd03d9f812110ec9e85ec8](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/a87219c489f2b3837bbd03d9f812110ec9e85ec8)  
 Checklist:
-* Classes Piece, Board [public]
-* OOP Topics:
-* Associations
-* Encapsulation / Access Modifiers
-* Data Structures Topics:
-* Matrix
-
-##### Worknote #3 - Chess layer and printing the board
-Commit hash: [5d057d827a344dc7400dfd6cfa20df13c809db63](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/5d057d827a344dc7400dfd6cfa20df13c809db63)  
-Checklist:
-* Classes Piece, Board [public]
-* OOP Topics:
-* Associations
-* Encapsulation / Access Modifiers
-* Data Structures Topics:
-* Matrix
-
-##### Worknote #4 - Placing pieces on the board
-Commit hash: [0d1c4a1bcaa8bda05074481e90b0d7f5efcc6cd3](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/0d1c4a1bcaa8bda05074481e90b0d7f5efcc6cd3)  
-Checklist:
-* Method: Board.PlacePiece(piece, position)
-* Classes: Rook, King [public]
-* Method: ChessMatch.InitialSetup
-* OOP Topics:
-* Inheritance
-* Overriding
-* Polymorphism (ToString)
-
-##### Worknote #5 - BoardException and defensive programming
-Commit hash: [d8a7657012d39672d32df4e34fad24d89e2abea4](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/d8a7657012d39672d32df4e34fad24d89e2abea4)  
-Checklist:
-* Class BoardException [public]
-* Methods: Board.PositionExists, Board.ThereIsAPiece
-* Implement defensive programming in Board methods
-* OOP Topics:
-* Exceptions
-* Constructors (a string must be informed to the exception)
-
-##### Worknote #6 - ChessException and ChessPosition
-Commit hash: [6c13881057b0055ddb4a49a00d12f2c99c03db39](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/6c13881057b0055ddb4a49a00d12f2c99c03db39)  
-Checklist:
-* Class ChessException [public]
-* Class ChessPosition [public]
-* Refactor ChessMatch.InitialSetup
-* OOP Topics:
-* Exceptions
-* Encapsulation
-* Constructors (a string must be informed to the exception)
-* Overriding
-* Static members
-* Layers pattern
-
-##### Worknote #7 - Little improvement in board printing
-Commit hash: [7f9d1202e6ce32a1d4c7b9f6c3c53c1280b84d4f](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/7f9d1202e6ce32a1d4c7b9f6c3c53c1280b84d4f)  
-Checklist:
-* Color in terminal:
-* Windows: Git Bash
-* Mac: Google "osx terminal color"
-
-Checklist:
-* Place more pieces on the board
-* Distinguish piece colors in UI.PrintPiece method
-
-##### Worknote #8 - Moving pieces
-Commit hash: [a6d024ee0a9e8b91637362d9b909cb4e1236ea5e](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/a6d024ee0a9e8b91637362d9b909cb4e1236ea5e)  
-Checklist:
-* Method Board.RemovePiece
-* Method UI.ReadChessPosition
-* Method ChessMatch.PerformChessMove
-* Method ChessMatch.MakeMove
-* Method ChessMatch.ValidadeSourcePosition
-* Write basic logic on Program.cs
-* OOP Topics:
-* Exceptions
-* Encapsulation
-
-##### Worknote #9 - Handling exceptions and clearing screen
-Commit hash: [bde6e416f7a8fc49e544168efd848767fe99dd55](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/bde6e416f7a8fc49e544168efd848767fe99dd55)  
-Checklist:
-* ChessException
-* InputMismatchException
-
-##### Worknote #10 - Possible moves of a piece
-Commit hash: [20096e534e191ed0c206a6da0e5b52b92597db37](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/20096e534e191ed0c206a6da0e5b52b92597db37)  
-Checklist:
-* Methods in Piece:
-* PossibleMoves [abstract]
-* PossibleMove
-* IsThereAnyPossibleMove
-* Basic PossibleMove implementation for Rook and King
-* Update ChessMatch.ValidadeSourcePosition
-* OOP Topics:
-* Abstract method / class
-* Exceptions
-
-##### Worknote #11 - Implementing possible moves of Rook
-Commit hash: [1dfccd937e7183cbdb11deef5af3225a24796cbb](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/1dfccd937e7183cbdb11deef5af3225a24796cbb)  
-Checklist:
-* Method ChessPiece.IsThereOpponentPiece(position) [protected]
-* Implement Rook.PossibleMoves
-* Method ChessMatch.ValidateTargetPosition
-* OOP Topics:
-* Polymorphism
-* Encapsulation / access modifiers [protected]
-* Exceptions
-
-##### Worknote #12 - Printing possible moves
-Commit hash: [bd2f4447cea6e40af6739d4c35aa5cea1da520ba](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/bd2f4447cea6e40af6739d4c35aa5cea1da520ba)  
-Checklist:
-* Method ChessMatch.PossibleMoves
-* Method UI.PrintBoard [overload]
-* Refactor main program logic
-* OOP Topics:
-* Overloading
-
-##### Worknote #13 - Implementing possible moves of King
-Commit hash: [ca678564d911f4a12907b6e4759998658bbd249b](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/ca678564d911f4a12907b6e4759998658bbd249b)  
-Checklist:
-* Method King.CanMove(position) [private]
-* Implement King.PossibleMoves
-* OOP Topics:
-* Encapsulation
-* Polymorphism
-
-##### Worknote #14- Switching player each turn
-Commit hash: [185eb7af0e3186016cd4cd091ea0b0d4bed04417](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/185eb7af0e3186016cd4cd091ea0b0d4bed04417)  
-Checklist:
-* Class ChessMatch:
-* Properties Turn, CurrentPlayer [private set]
-* Method NextTurn [private]
-* Update PerformChessMove
-* Update ValidadeSourcePosition
-* Method UI.PrintMatch
-* OOP Topics:
-* Encapsulation
-* Exceptions
-
-##### Worknote #15 - Handling captured pieces
-Commit hash: [d096a70d4a752ddcdce1c49bb280b3526226be18](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/d096a70d4a752ddcdce1c49bb280b3526226be18)  
-Checklist:
-* Method UI.PrintCapturedPieces
-* Update UI.PrintMatch
-* Update Program logic
-* Lists in ChessMatch: _piecesOnTheBoard, _capturedPieces
-* Update constructor
-* Update PlaceNewPiece
-* Update MakeMove
-* OOP Topics:
-* Encapsulation
+* Attributes
 * Constructors
-* Data Structures Topics:
-* List
+* Getters/Setters
+* hashCode and equals
+* toString
+* implements Serializable
 
-##### Worknote #16 - Check logic
-Commit hash: [1660c7e0ae73a7209e1f8d7718eac83ad11a4d1d](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/1660c7e0ae73a7209e1f8d7718eac83ad11a4d1d)  
-Rules:
-* Check means your king is under threat by at least one opponent piece
-* You can't put yourself in check
-
+##### Worknote #3 - Created DepartmentDao and SellerDao class
+Commit hash: [7d4cf8e5f3dc0b1f08e7ad3ffed38749cc96aa1e](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/7d4cf8e5f3dc0b1f08e7ad3ffed38749cc96aa1e)  
 Checklist:
-* Property ChessPiece.ChessPosition [get]
-* Class ChessMatch:
-* Method UndoMove
-* Property Check [private set]
-* Method Opponent [private]
-* Method King(color) [private]
-* Method TestCheck
-* Update PerformChessMove
-* Update UI.PrintMatch
+* Classes DepartmentDao, SellerDao [public]
 
-##### Worknote #17 - Checkmate logic
-Commit hash: [1660c7e0ae73a7209e1f8d7718eac83ad11a4d1d](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/1660c7e0ae73a7209e1f8d7718eac83ad11a4d1d)  
+##### Worknote #4 - Created DaoFactory and SellerDaoJDBC
+Commit hash: [5fc028068552036140160dbcdafd8af53e4843fd](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/5fc028068552036140160dbcdafd8af53e4843fd)  
 Checklist:
-* Class ChessMatch:
-* Property Checkmate [private set]
-* Method TestCheckmate [private]
-* Update PerformChessMove
-* Update UI.PrintMatch
-* Update Program logic
+* Classes DaoFactory, SellerDaoJDBC [public]
+* Method: createSellerDao
 
-##### Worknote #18 - Piece move count
-Commit hash: [c5427cb3b76310b650b7671758576ba19641c46e](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/c5427cb3b76310b650b7671758576ba19641c46e)  
+##### Worknote #5 - Created SellerDaoJDBC SQL Statements
+Commit hash: [6ec2e16eb8eb6ae25d0f6dd5ca258c8126ccc114](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/6ec2e16eb8eb6ae25d0f6dd5ca258c8126ccc114)  
 Checklist:
-* Class ChessPiece:
-* Property MoveCount [private set]
-* Method IncreaseMoveCount [internal]
-* Method DecreaseMoveCount [internal]
-* Class ChessMatch:
-* Update MakeMove
-* Update UndoMove
-* OOP Topics:
-* Encapsulation
+* Class SellerDaoJDBC [public]
+* Method: findById
 
-##### Worknote #19 - Pawn
-Commit hash: [11432d0f6d2544aba15d4b8394069f3ac2aca8a9](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/11432d0f6d2544aba15d4b8394069f3ac2aca8a9)  
+##### Worknote #6 - Fixed SellerDaoJDBC class
+Commit hash: [a0c6988bf46e7d61ae1b84e99604043599183e33](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/a0c6988bf46e7d61ae1b84e99604043599183e33)  
 Checklist:
-* Class Pawn
-* Update ChessMatch.InitialSetup
-* OOP Topics:
-* Encapsulation
-* Inheritance
-* Polymorphism
+* Class SellerDaoJDBC [public]
+* Method: findById
 
-##### Worknote #20 - Bishop
-Commit hash: [1e17373971fc627ce674b407213cb33e3ae7dac3](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/1e17373971fc627ce674b407213cb33e3ae7dac3)  
+##### Worknote #7 - Improved findById fuction
+Commit hash: [1aff29f78170f1a714c564c6dddc9851d2cf4f00](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/1aff29f78170f1a714c564c6dddc9851d2cf4f00)  
 Checklist:
-* Class Bishop
-* Update ChessMatch.InitialSetup
-* OOP Topics:
-* Encapsulation
-* Inheritance
-* Polymorphism
+* Class SellerDaoJDBC [public]
+* Method: findById
 
-##### Worknote #21 - Knight
-Commit hash: [df1edadd3b1841e94a23884ab898383c2823b25c](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/df1edadd3b1841e94a23884ab898383c2823b25c)  
+##### Worknote #8 - Created findByDepartment function
+Commit hash: [8f4c97e3fc5cf5dec271b67acf13566bc777510a](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/8f4c97e3fc5cf5dec271b67acf13566bc777510a)  
 Checklist:
-* Class Knight
-* Update ChessMatch.InitialSetup
-* OOP Topics:
-* Encapsulation
-* Inheritance
-* Polymorphism
+* Class SellerDaoJDBC [public]
+* Method: findByDepartment
 
-##### Worknote #22 - Queen
-Commit hash: [100daa2ea721f74f0fe72207a0c08d26a4e73e88](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/100daa2ea721f74f0fe72207a0c08d26a4e73e88)  
+##### Worknote #9 - Created findAll function
+Commit hash: [02df17b6767d5bd43e32e30e3f38bb506b017fbc](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/02df17b6767d5bd43e32e30e3f38bb506b017fbc)  
 Checklist:
-* Class Queen
-* Update ChessMatch.InitialSetup
-* OOP Topics:
-* Encapsulation
-* Inheritance
-* Polymorphism
+* Class SellerDaoJDBC [public]
+* Method: findAll
 
-# Special Moves
-
-##### Worknote #23 - Castling
-Commit hash: [258d28376305b6dc32e224d796043b131a853818](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/258d28376305b6dc32e224d796043b131a853818)  
+##### Worknote #10 - Created insert statement function
+Commit hash: [c17fff0dbc49bee89cea8c306544c138c5b89620](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/c17fff0dbc49bee89cea8c306544c138c5b89620)  
 Checklist:
-* Update King
-* Update ChessMatch.MakeMove
-* Update ChessMatch.UndoMove
+* Class SellerDaoJDBC [public]
+* Method: insert
 
-##### Worknote #24 - En Passant
-Commit hash: [9b873ae7f596e179b2e752605d00db93055ac60a](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/9b873ae7f596e179b2e752605d00db93055ac60a)  
+##### Worknote #11 - Created update statement (class seller)
+Commit hash: [986003ddd5dc6bc2aadd5286a43fbbfd737ac7fa](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/986003ddd5dc6bc2aadd5286a43fbbfd737ac7fa)  
 Checklist:
-* Register a pawn which can be captured by en passant on next turn
-* Property ChessMatch.EnPassantVulnerable
-* Update ChessMatch.PerformChessMove
-* Update Pawn.PossibleMoves
-* Update ChessMatch.MakeMove
-* Update ChessMatch.UndoMove
-* Update ChessMatch.InitialSetup
+* Class SellerDaoJDBC [public]
+* Method: update
 
-##### Worknote #25 - Promotion
-Commit hash: [be95d0991af4cdc5a41bfe0cedc64c9e208a9175](https://github.com/MaurosMJ/curso-javacompletoProjXadrez/commit/be95d0991af4cdc5a41bfe0cedc64c9e208a9175)  
+##### Worknote #12 - Created delete statement
+Commit hash: [0a8f69dc90f7dd271ceebabcdd6e8347a17846ca](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/0a8f69dc90f7dd271ceebabcdd6e8347a17846ca)  
 Checklist:
-* Property ChessMatch.Promoted
-* Update ChessMatch.PerformChessMove
-* Method ChessMatch.ReplacePromotedPiece
-* Update Program logic
+* Class SellerDaoJDBC [public]
+* Method: delete
+
+##### Worknote #13 - Implemented a reinforcement exercise: DepartmentDao
+Commit hash: [1c994797434cdac87e49b54d3079f80e7cf06c0f](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/1c994797434cdac87e49b54d3079f80e7cf06c0f)  
+Checklist:
+* Class DepartmentDaoJDBC [public]
+* Methods: insert, update, deleteById, findById, instatiateDepartment and findAll
+
+##### Worknote #14- Removed unnecessary lines and added database script (final)
+Commit hash: [ff4e756f18ec3668a4392d4bd4468ec93195d762](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/ff4e756f18ec3668a4392d4bd4468ec93195d762)  
 
 # Credits:
 [@acenelio (Nelio Alves)](https://github.com/acenelio)  
