@@ -140,4 +140,4 @@ Checklist:
 Commit hash: [ff4e756f18ec3668a4392d4bd4468ec93195d762](https://github.com/MaurosMJ/curso-javacompletoProj-Dao-JDBC/commit/ff4e756f18ec3668a4392d4bd4468ec93195d762)
 
 ## Credits:
-- This repository is maintained by MaurosMJ. The Projects are based on the 'Java COMPLETO Programação Orientada a Objetos + Projetos' course.
+This repository is maintained by [MaurosMJ](https://github.com/MaurosMJ). The Projects are based on the 'Java COMPLETO Programação Orientada a Objetos + Projetos' course.
